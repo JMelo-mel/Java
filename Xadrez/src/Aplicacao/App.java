@@ -1,7 +1,11 @@
 package Aplicacao;
 
+import Xadrez.XadrezPartida;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        
+        XadrezPartida xadrezpartida = new XadrezPartida();
+        IU.imprimirTabuleiro(xadrezpartida.getPecas());
     }
 }
